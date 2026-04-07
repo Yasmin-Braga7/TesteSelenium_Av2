@@ -14,7 +14,3 @@
     de formulários até a integridade de fluxos críticos de negócio, garantindo que a aplicação esteja livre de regressões.
   </p>
 </div>
-
-<br>
-
-}
