@@ -1,1 +1,30 @@
-Este projeto realiza a automação de testes funcionais para a avaliação AV2 utilizando o Selenium WebDriver. O código foi estruturado para validar fluxos críticos da aplicação web, garantindo que elementos de interface e regras de negócio respondam conforme o esperado. Através da execução de scripts automatizados, o projeto verifica a integridade da navegação, o preenchimento de formulários e a validação de respostas do sistema, reduzindo o esforço de testes manuais e assegurando a qualidade da entrega técnica.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg" width="80" height="80" alt="Selenium Logo" />
+  <h1>🛡️ TesteSelenium</h1>
+  <p><i>Automação de Testes End-to-End para Garantia de Qualidade (QA)</i></p>
+</div>
+
+<hr>
+
+<div style="background-color: #1e1e1e; padding: 20px; border-radius: 10px; border: 1px solid #333;">
+  <h2 style="color: #4da6ff;">📝 Descrição do Projeto</h2>
+  <p style="line-height: 1.6;">
+    Este repositório foi desenvolvido para a avaliação <b>AV2</b>, focando na implementação de testes funcionais automatizados. 
+    O código utiliza o <b>Selenium WebDriver</b> para simular interações reais do usuário, validando desde o preenchimento 
+    de formulários até a integridade de fluxos críticos de negócio, garantindo que a aplicação esteja livre de regressões.
+  </p>
+</div>
+
+<br>
+
+<h2 style="color: #4da6ff;">💻 Exemplo de Implementação</h2>
+
+```java
+// Exemplo de automação de campo e clique
+public void realizarTeste() {
+    driver.findElement(By.id("search")).sendKeys("Selenium QA");
+    driver.findElement(By.id("btn-submit")).click();
+    
+    String alerta = driver.switchTo().alert().getText();
+    Assert.assertTrue(alerta.contains("Sucesso"));
+}
