@@ -17,14 +17,4 @@
 
 <br>
 
-<h2 style="color: #4da6ff;">💻 Exemplo de Implementação</h2>
-
-```java
-// Exemplo de automação de campo e clique
-public void realizarTeste() {
-    driver.findElement(By.id("search")).sendKeys("Selenium QA");
-    driver.findElement(By.id("btn-submit")).click();
-    
-    String alerta = driver.switchTo().alert().getText();
-    Assert.assertTrue(alerta.contains("Sucesso"));
 }
